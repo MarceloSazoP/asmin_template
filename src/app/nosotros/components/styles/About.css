@@ -1,0 +1,56 @@
+.imagen-profesional {
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    max-width: 500px; /* Tamaño máximo de la imagen */
+    border: 2px solid #ffb787; /* Borde delgado y profesional */
+    border-radius: 8px; /* Bordes suavizados para un estilo elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave al interactuar */
+  }
+
+  .imagen-teams {
+    border: 2px solid #ffb787; /* Borde delgado y profesional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave al interactuar */
+  }
+
+  .imagen {
+    border: 2px solid #ffb787; /* Borde delgado y profesional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave al interactuar */
+  }
+
+ 
+  .imagen-profesional:hover {
+    transform: translateY(-5px); /* Eleva la imagen ligeramente */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+  }
+
+  .texto-con-borde {
+    display: inline-block; /* Hace que el borde se ajuste solo al texto */
+    font-weight: 600; /* Peso de la fuente para que sea más visible */
+    padding: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+    position: relative; /* Necesario para el borde */
+  }
+  
+  .texto-con-borde::before {
+    content: ''; /* Crear un pseudo-elemento vacío */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Grosor del borde */
+    background-color: #ffb787; /* Color profesional del borde */
+    transform: scaleX(0); /* Inicialmente el borde está colapsado */
+    transform-origin: bottom right; /* El borde aparece desde la esquina */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .texto-con-borde:hover::before {
+    transform: scaleX(1); /* El borde se extiende cuando hace hover */
+    transform-origin: bottom left; /* La animación comienza desde la izquierda */
+  }
+  
+  .texto-con-borde:hover {
+    color: #2C3E50; /* Cambiar color del texto al pasar el mouse */
+  }

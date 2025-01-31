@@ -1,0 +1,20 @@
+.imagen-profesional {
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    max-width: 500px; /* Tamaño máximo de la imagen */
+    border: 2px solid #ffb787; /* Borde delgado y profesional */
+    border-radius: 8px; /* Bordes suavizados para un estilo elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave al interactuar */
+  }
+
+  .imagen {
+    border: 2px solid #ffb787; /* Borde delgado y profesional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave al interactuar */
+  }
+
+ 
+  .imagen-profesional:hover {
+    transform: translateY(-5px); /* Eleva la imagen ligeramente */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+  }

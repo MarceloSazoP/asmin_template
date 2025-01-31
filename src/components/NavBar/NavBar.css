@@ -1,0 +1,75 @@
+/* Estilos generales para el Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bg-100); /* Fondo claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+  }
+  
+  /* Logo o nombre de la empresa */
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-200); /* Color principal para resaltar el logo */
+  }
+  
+  /* Menú de navegación */
+  .navbar .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .menu a {
+    text-decoration: none;
+    color: var(--text-100); /* Color oscuro para los enlaces */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover en los enlaces */
+  .navbar .menu a:hover {
+    color: var(--primary-200); /* Resaltar los enlaces con el color primario en hover */
+  }
+  
+  /* Fondo más oscuro cuando el usuario hace scroll */
+  .navbar.scrolled {
+    background-color: var(--bg-200); /* Fondo más oscuro al hacer scroll */
+  }
+
+.texto-con-borde_navbar {
+    display: inline-block; /* Hace que el borde se ajuste solo al texto */
+    font-weight: 600; /* Peso de la fuente para que sea más visible */
+    color: #333; /* Color del texto */
+    padding: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+    position: relative; /* Necesario para el borde */
+  }
+  
+  .texto-con-borde_navbar::before {
+    content: ''; /* Crear un pseudo-elemento vacío */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Grosor del borde */
+    background-color: #fd5732; /* Color profesional del borde */
+    transform: scaleX(0); /* Inicialmente el borde está colapsado */
+    transform-origin: bottom right; /* El borde aparece desde la esquina */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .texto-con-borde_navbar:hover::before {
+    transform: scaleX(1); /* El borde se extiende cuando hace hover */
+    transform-origin: bottom left; /* La animación comienza desde la izquierda */
+  }
+  
+  .texto-con-borde_navbar:hover {
+    color: #2C3E50; /* Cambiar color del texto al pasar el mouse */
+  }
