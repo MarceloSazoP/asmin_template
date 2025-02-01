@@ -1,5 +1,4 @@
 import { Gallery } from "./components/Gallery";
-import { Header } from "./components/Header";
 import { Layout1 } from "./components/Layout1";
 import { Layout2 } from "./components/Layout2";
 import { PortaFolio } from "./components/Portafolio";

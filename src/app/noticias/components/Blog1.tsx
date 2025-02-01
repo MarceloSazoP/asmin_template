@@ -3,7 +3,6 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
-import img from "@/styles/images/Alfred-H-Knight-Logo-1 (2).png"
 import type { ButtonProps, CarouselApi } from "@relume_io/relume-ui";
 import clsx from "clsx";
 import {
@@ -42,7 +41,7 @@ type Props = {
 export type Blog1Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Blog1 = (props: Blog1Props) => {
-  const { tagline, heading, description, button, blogPosts } = {
+  const { tagline, heading, description, blogPosts } = {
     ...Blog1Defaults,
     ...props,
   };

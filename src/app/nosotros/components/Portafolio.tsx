@@ -1,4 +1,4 @@
-import { Button } from "@relume_io/relume-ui";
+
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import React from 'react';
@@ -34,7 +34,7 @@ type Props = {
 export type PortaFolioProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const PortaFolio = (props: PortaFolioProps) => {
-  const { tagline, heading, description, projects, button } = {
+  const { projects } = {
     ...PortaFolioDefaults,
     ...props,
   };

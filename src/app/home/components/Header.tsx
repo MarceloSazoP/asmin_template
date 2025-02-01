@@ -1,4 +1,3 @@
-import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import "./styles/Home.css"
 
@@ -17,7 +16,7 @@ type Props = {
 export type HeaderProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Header = (props: HeaderProps) => {
-  const { heading, description, buttons, image } = {
+  const { heading, description, image } = {
     ...HeaderDefaults,
     ...props,
   };

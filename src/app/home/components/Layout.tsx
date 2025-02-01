@@ -1,4 +1,4 @@
-import { Button } from "@relume_io/relume-ui";
+
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 
@@ -24,7 +24,7 @@ type Props = {
 export type LayoutProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Layout = (props: LayoutProps) => {
-  const { tagline, heading, description, sections, buttons } = {
+  const { heading, description, sections } = {
     ...props,
     ...LayoutDefaults,
   };

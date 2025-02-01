@@ -1,4 +1,3 @@
-import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 import React from "react";
@@ -35,7 +34,7 @@ type Props = {
 export type PortafolioProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Portafolio = (props: PortafolioProps) => {
-  const { tagline, heading, description, projects, button } = {
+  const { tagline, heading, description, projects } = {
     ...PortafolioDefaults,
     ...props,
   };
@@ -60,7 +59,7 @@ export const Portafolio = (props: PortafolioProps) => {
   );
 };
 
-const Project: React.FC<ProjectProps> = ({ title, description, image, url, button, tags }) => (
+const Project: React.FC<ProjectProps> = ({ title, description, image, url }) => (
   <article className="grid grid-cols-1 items-center gap-x-12 gap-y-6 border-t border-border-primary py-8 md:grid-cols-2 md:gap-y-0 lg:gap-x-[4.9rem] lg:py-12">
     <div>
       <h3 className="mb-2 text-2xl font-bold md:text-3xl md:leading-[1.3] lg:text-4xl">

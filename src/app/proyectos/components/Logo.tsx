@@ -11,7 +11,7 @@ type Props = {
 export type Logo5Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Logo = (props: Logo5Props) => {
-  const { heading, logos } = {
+  const { logos } = {
     ...LogoDefaults,
     ...props,
   };

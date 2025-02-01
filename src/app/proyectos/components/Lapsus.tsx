@@ -80,7 +80,7 @@ export const Lapsus = (props: LapsusProps) => {
   );
 };
 
-const AnimationSection = ({ containerHeight }: { containerHeight: number }) => {
+const AnimationSection = ({  }: { containerHeight: number }) => {
   const scrollSection = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollSection,

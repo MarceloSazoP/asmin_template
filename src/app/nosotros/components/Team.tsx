@@ -1,7 +1,6 @@
 
-import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
-import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
+import {  BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
 type ImageProps = {
@@ -39,7 +38,7 @@ type Props = {
 export type TeamProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Team = (props: TeamProps) => {
-  const { tagline, heading, description, teamMembers, footer } = {
+  const { tagline, heading, description, teamMembers } = {
     ...TeamDefaults,
     ...props,
   };
