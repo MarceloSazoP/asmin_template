@@ -36,10 +36,10 @@ export const Formulario = (props: FormularioProps) => {
   const [phoneInput, setPhoneInput] = useState("");
 
   const [selectedItem, setSelectedItem] = useState("");
-  const [selectedRadio, setSelectedRadio] = useState("");
+  const [selectedRadio] = useState("");
 
   const [messageInput, setMessageInput] = useState("");
-  const [acceptTerms, setAcceptTerms] = useState<boolean | "indeterminate">(false);
+  const [acceptTerms] = useState<boolean | "indeterminate">(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -59,15 +59,6 @@ export const Formulario = (props: FormularioProps) => {
     { value: "presupuesto", label: "Presupuesto" },
     { value: "servicio", label: "Servicio" },
     { value: "consulta", label: "Consulta" },
-  ];
-
-  const radioItems = [
-    { value: "first-choice", label: "First choice" },
-    { value: "second-choice", label: "Second choice" },
-    { value: "third-choice", label: "Third choice" },
-    { value: "fourth-choice", label: "Fourth choice" },
-    { value: "fifth-choice", label: "Fifth choice" },
-    { value: "other", label: "Other" },
   ];
 
   return (
