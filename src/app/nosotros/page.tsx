@@ -12,12 +12,8 @@ export default function Page() {
         
         <Layout2 />
         <Layout1 />
-        
         <Gallery />
-        <PortaFolio />
-        <Ubicacion />
-        <Ubicacion2 />
-        
+        <PortaFolio />      
         <Team />
       </div>
     );
