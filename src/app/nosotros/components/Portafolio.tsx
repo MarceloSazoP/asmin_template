@@ -59,7 +59,7 @@ export const PortaFolio = (props: PortaFolioProps) => {
   );
 };
 
-const Project: React.FC<ProjectProps> = ({ title, description, image, url, button, tags }) => (
+const Project: React.FC<ProjectProps> = ({ title, image, url }) => (
   <article>
     <div className="mb-5 md:mb-6">
       <a href={url}>

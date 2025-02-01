@@ -37,7 +37,7 @@ type Props = {
 export type Ubicacion2Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Ubicacion2 = (props: Ubicacion2Props) => {
-  const { tagline, heading, description, contacts, map } = {
+  const { tagline, heading, description, contacts } = {
     ...Ubicacion2Defaults,
     ...props,
   };
